@@ -11,7 +11,9 @@ class Locale extends Middleware
 {
     public function handle($request, Closure $next)
     {
-        app()->setLocale($request->session()->get('locale'));
+        $locale = $request->session()->get('locale') ?? 'az';
+
+        app()->setLocale($locale);
 
         return $next($request);
     }

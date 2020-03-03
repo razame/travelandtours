@@ -42,5 +42,6 @@ return [
     'book_now'=>'İndi sifariş edin',
     'slug'=>'Slug in Az',
     'pages'=>'Pages in Az',
-    'page'=>'Page in Az'
+    'page'=>'Page in Az',
+    'is_featured'=>'Nümayiş olunur'
 ];

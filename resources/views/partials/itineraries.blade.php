@@ -1,6 +1,6 @@
 <div id="detail-content-sticky-nav-02" class="fullwidth-horizon-sticky-section">
 
-    <h4 class="heading-title">Itinerary</h4>
+    <h3 class="heading-title">{{__('general.itinerary')}}</h3>
 
 {{--    <h6>Introduction</h6>--}}
 
@@ -8,21 +8,21 @@
 
     <ul class="itinerary-list mt-30">
 
-        @foreach($package->itineraries as $itinerary)
-            <li>
+        @foreach($package->itineraries as $key=>$itinerary)
+            <li style="background-color: {{$key%2==0?'#f7f7f7':'white'}}; padding: 30px">
                 @if($itinerary->side_title != '')
                     <div class="itinerary-day">
-                        <span>{!! $itinerary->side_title !!}</span>
+                        <span>{!! $itinerary->translate(app()->getLocale())->side_title !!}</span>
                     </div>
                 @endif
 
-                <h6>{!! $itinerary->title !!}</h6>
+                <h6>{!! $itinerary->translate(app()->getLocale())->title !!}</h6>
 
-                <p>{!! $itinerary->description !!}</p>
+                <p>{!! $itinerary->translate(app()->getLocale())->description !!}</p>
 
                 <ul class="itinerary-meta list-inline-block text-primary">
                     @foreach($itinerary->itinerary_features as $itinerary_feature)
-                        <li><i class="{{$itinerary_feature->icon}}"></i> {!! $itinerary_feature->text !!}</li>
+                        <li><i class="{{$itinerary_feature->icon}}"></i> {!! $itinerary_feature->translate(app()->getLocale())->text !!}</li>
                     @endforeach
                 </ul>
             </li>
