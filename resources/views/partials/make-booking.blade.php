@@ -1,10 +1,10 @@
-<div class="col-12 col-lg-4">
+{{--<div class="col-12 col-lg-4">--}}
 
-    <aside class="sticky-kit-02 sidebar-wrapper no-border mt-20 mt-lg-0">
+{{--    <aside class="sticky-kit-02 sidebar-wrapper no-border mt-20 mt-lg-0">--}}
 
         <div class="booking-box">
 
-            <div class="box-heading"><h3 class="h6 text-white text-uppercase">Make a booking</h3></div>
+{{--            <div class="box-heading"><h3 class="h6 text-white text-uppercase">Make a booking</h3></div>--}}
 
             <form action="{{route('booking-details', $package->title)}}" method="POST">
 
@@ -18,16 +18,16 @@
     {{--                        <a href="#detail-content-sticky-nav-05" class="anchor font10 pl-40 d-block text-uppercase h6 text-primary float-right mt-5">Change</a>--}}
                         </small>
                         <br>
-                        (AZN {!! $package->price_per_head !!})
+
                     </h4>
 
 
-                    <div class="form-group form-spin-group border-top mt-15 pt-10">
+                    <div class="form-group">
                         <label class="h6 font-sm">How many Adult guests?</label>
-                        <input name="adult_guests" type="text" class="form-control touch-spin-03 form-control-readonly" value="2" min="1" readonly />
+                        <input id="adult_guests" name="adult_guests" type="number" class="form-control" value="2" min="1" max="20" onkeyup="calculate()" />
 
                         <label class="h6 font-sm">How many Child guests?</label>
-                        <input name="child_guests" type="text" class="form-control touch-spin-03 form-control-readonly" value="2" min="0"  />
+                        <input id="child_guests" name="child_guests" type="number" class="form-control" value="2" min="0" max="20" onkeyup="calculate()" />
                         <p style="font-size: smaller">(Child guest rate {{100 - config('travel-offers.child_rate_fraction')*100}}% off)</p>
                     </div>
 
@@ -61,6 +61,6 @@
 
         </div>
 
-    </aside>
+{{--    </aside>--}}
 
-</div>
+{{--</div>--}}

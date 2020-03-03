@@ -132,6 +132,23 @@
             </select>
         </div>
 
+        <div class="form-group  {{ $errors->has('is_featured') ? 'has-error' : '' }}">
+            <label>{{ __('general.is_featured') }}</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            No &nbsp;
+            <input type="radio" name="is_featured" value="0"
+                            @if(!is_null(@package) && @$package->is_featured == 0)
+                                checked
+                            @endif
+            />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Yes &nbsp;
+            <input type="radio" name="is_featured" value="1"
+                            @if(!is_null(@package) && @$package->is_featured == 1)
+                             checked
+                            @endif
+            />
+        </div>
+
     @include('admin.packages.partials.translations')
     <!-- ./card -->
         <button class="btn btn-primary btn-block">{{__('general.save')}}</button>

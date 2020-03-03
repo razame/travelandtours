@@ -15,6 +15,8 @@ Route::get('/change-locale/{locale}', 'LocaleController@handle')
     ->name('change-locale');
 
 Route::get('/', 'FrontendController@index')->name('index');
+Route::get('/tours', 'FrontendController@packages')->name('tours');
+Route::get('/gallery', 'FrontendController@gallery')->name('gallery');
 Route::get('/details/{slug}', 'FrontendController@details')->name('details');
 Route::post('/booking-details/{slug}', 'FrontendController@bookingDetails')->name('booking-details');
 Route::post('/book/{slug}', 'FrontendController@book')->name('book');

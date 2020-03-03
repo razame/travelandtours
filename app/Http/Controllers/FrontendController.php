@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Booking;
+use App\Image;
 use App\Package;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -15,6 +16,7 @@ class FrontendController extends Controller
             'itineraries.itinerary_features',
             'images'
         ])
+        ->where('is_featured', 1)
         ->get()
         ->map(function($sql) {
             return $sql->setRelation('images', $sql->images->take(1));
@@ -151,4 +153,24 @@ class FrontendController extends Controller
     }
 
 
+    public function packages(){
+        $packages = Package::with([
+            'itineraries',
+            'itineraries.itinerary_features',
+            'images'
+        ])
+        ->get()
+        ->map(function($sql) {
+            return $sql->setRelation('images', $sql->images->take(1));
+        })
+        ->map(function($sql) {
+            return $sql->setRelation('itineraries', $sql->itineraries->take(1));
+        });
+        return view('index', compact('packages'));
+    }
+
+    public function gallery(){
+        $images = Image::all();
+        return view('gallery', compact('images'));
+    }
 }

@@ -14,11 +14,11 @@ class Package extends Model implements ModelInterface, TranslatableContract
 
     protected $guarded = ['_token','locale', '_method'];
 
-    protected $appends = ['trip_tenure', 'from_till'];
+    protected $appends = ['trip_tenure', 'trip_from_till'];
 
     public $translatedAttributes = ['title', 'tag_line', 'description'];
 
-    protected $fillable = ['trip_start_date_time', 'trip_end_date_time', 'price_per_head'];
+    protected $fillable = ['trip_start_date_time', 'trip_end_date_time', 'price_per_head', 'is_featured'];
 
     public function getTripStartDateTimeAttribute($value){
         return Carbon::parse($value)->format('Y-m-d H:i:s');
@@ -40,9 +40,9 @@ class Package extends Model implements ModelInterface, TranslatableContract
         if(
             in_array(request()->route()->getName(), ['index'])
             &&
-            strlen($value) >= 20
+            strlen($value) >= 50
         )
-            $value = substr($value, 0 , 20).'...';
+            $value = substr($value, 0 , 50).'...';
 
 
         return $value;

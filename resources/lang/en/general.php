@@ -42,5 +42,6 @@ return [
     'book_now'=>'Book Now',
     'slug'=>'Slug',
     'pages'=>'Pages',
-    'page'=>'Page'
+    'page'=>'Page',
+    'is_featured'=>'Is Featured'
 ];
