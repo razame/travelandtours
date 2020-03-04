@@ -12,10 +12,13 @@
                 <input hidden name="package_name" value="{{$package->title}}">
                 <input hidden name="package_price" value="{{$package->price_per_head}}">
 
-                <h4 class="heading-title"><span>Traveller Details</span></h4>
+                <h3 class="heading-title"><span>Lead Traveller</span></h3>
                 {{--                                    <p class="post-heading">Already registered with Roomspoint? <a href="#loginFormTabInModal-login" data-toggle="modal" data-target="#loginFormTabInModal" data-backdrop="static" data-keyboard="false">Login</a></p>--}}
 
-                <h6>Lead Traveller</h6>
+{{--                <br>--}}
+{{--                <h6></h6>--}}
+                <br>
+                <br>
 
                 <div class="row gap-15 mb-15">
 
@@ -23,11 +26,10 @@
 
                         <div class="form-group">
                             <label>Title</label>
-                            <select name="title" data-placeholder="Select" class="chosen-the-basic" tabindex="2">
-                                <option value=""></option>
-                                <option>Mr.</option>
-                                <option>Mrs.</option>
-                                <option>Miss</option>
+                            <select name="title" data-placeholder="Select" class="chosen-the-basic form-control" tabindex="2">
+                                <option value="Mr.">Mr.</option>
+                                <option value="Mrs.">Mrs.</option>
+                                <option value="Miss">Miss</option>
                             </select>
                         </div>
 
