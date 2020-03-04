@@ -8,18 +8,20 @@
 
             <form action="{{route('booking-details', $package->title)}}" method="POST">
 
-                <div class="box-content">
+                <div
+{{--                    class="box-content"--}}
+                >
                     @csrf
-    {{--                <span class="font600 text-muted line-125">Your choosen date is</span>--}}
-                    <h4 class="line-125 choosen-date mt-3"><i class="ri-calendar"></i>
-                        {{$package->trip_from_till}}
-                        <small class="d-block">
-                            ({!! $package->trip_tenure !!})
-    {{--                        <a href="#detail-content-sticky-nav-05" class="anchor font10 pl-40 d-block text-uppercase h6 text-primary float-right mt-5">Change</a>--}}
-                        </small>
-                        <br>
-
-                    </h4>
+{{--                    <h4 class="line-125 choosen-date mt-3"><i class="ri-calendar"></i>--}}
+                     <h2>
+                         <i class="ri-calendar"></i>
+                         {{$package->trip_from_till}}
+                         <small class="d-block">
+                             ({!! $package->trip_tenure !!})
+                         </small>
+                         <br>
+                     </h2>
+{{--                    </h4>--}}
 
 
                     <div class="form-group">

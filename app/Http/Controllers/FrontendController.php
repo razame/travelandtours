@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
+    //@TODO: need to remove word Tourperator from this project
     public function index(){
         $packages = Package::with([
             'itineraries',

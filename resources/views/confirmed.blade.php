@@ -1,8 +1,31 @@
 @extends('app')
 
 @section('content')
-    <div class="container pt-50 mt-80">
 
+
+{{--    <div class="container pt-50 mt-80">--}}
+        <section class="inner-page-banner" style="background-image:url(/theme/img/banner/tour-banner.jpg)">
+            <div class="page-banner-caption">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Confirmation</h1>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
+                                <li class="breadcrumb-item active">Confirmation</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end banner -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="row justify-content-center">
 
             <div class="col-12 col-md-11 col-lg-10 col-xl-9">
@@ -10,8 +33,9 @@
                 <div class="content-wrapper">
 
                     <div class="success-icon-text">
-                        <span class="icon-font  text-success"><i class="elegent-icon-check_alt2"></i></span>
-                        <h4 class="text-uppercase letter-spacing-1">Congratulations!</h4>
+                        <span class="icon-font"><i class="elegent-icon-check_alt2" style="color: #69BE44"></i></span>
+                        <br>
+                        <h3 class="text-uppercase letter-spacing-1">Congratulations!</h3>
                         <p>Your book for {!! $booking->package_name !!} is confirmed and complete with Travel Offers</p>
                     </div>
 
@@ -27,9 +51,9 @@
 
                     <div class="mb-50"></div>
 
-                    <div class="booking-box">
+                    <div class="booking-box"  style="border: 1px solid #dcdcdc;">
 
-                        <div class="box-heading"><h3 class="h6 text-white text-uppercase">Your booking detail</h3></div>
+                        <div class="box-heading" style="background-color: #69BE44; text-align: center;"><h3 class="h6 text-white text-uppercase" style=" padding: 15px;">Your booking detail</h3></div>
 
                         <div class="box-content">
 
@@ -122,7 +146,7 @@
 
                             <div class="mb-40"></div>
 
-                            <h6>Your booking has been paid in full</h6>
+                            <h6 style="margin: 1%">Your booking has been paid in full</h6>
 
                             <ul class="list-li-border-top">
                                 <li class="clearfix">
@@ -224,5 +248,5 @@
 
         </div>
 
-    </div>
+{{--    </div>--}}
 @endsection

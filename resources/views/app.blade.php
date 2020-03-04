@@ -22,6 +22,57 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700,800,900" rel="stylesheet">
         <!-- Main CSS -->
         <link href="/theme/style.css" rel="stylesheet">
+        <link href="/theme/css/font-icons.css" rel="stylesheet">
+        <style>
+            .heading-title{
+                /*text-decoration: underline;*/
+                border-bottom: 1px solid #E5E5E5;
+            }
+            .clearfix{
+                margin: 7px;
+            }
+            ul.list-li-border-top > li{
+                border-top: 1px solid #EAEAEA;
+                padding-top: 12px;
+                margin-top: 12px;
+            }
+            ul.list-li-border-top li:first-child {
+                 border-top: 0;
+            }
+            .success-icon-text {
+                text-align: center;
+                line-height: 1.45;
+                border-top: 1px solid #DEE2E6;
+                border-bottom: 1px solid #DEE2E6;
+                padding: 50px 100px;
+                background-color: #FCFCFC;
+            }
+            .success-icon-text .icon-font {
+                font-size: 60px;
+                display: block;
+                line-height: 1;
+            }
+            .spacing-1, .letter-spacing-1 {
+                letter-spacing: 1px;
+                /*font-family: 'Metropolis', sans-serif;*/
+                color: #212121;
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            }
+            .mb-50 {
+                margin-bottom: 50px !important;
+            }
+            .booking-box .box-bottom {
+                padding: 22px 40px 18px;
+                line-height: 1.25;
+                border-top: 1px solid #E5E5E5;
+            }
+            .booking-box .box-content {
+                padding: 40px;
+            }
+            .icon-font > i{
+                font-size: 33px;
+            }
+        </style>
 
         @yield('styles')
 
