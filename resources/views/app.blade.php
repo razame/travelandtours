@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <title>Manali - Tour & Travels Agency Template</title>
-        <link rel="shortcut icon" href="/theme/img/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/tour-baku/Faviction/favicon-96x96.png" type="image/x-icon">
         <!-- Bootstrap Core CSS -->
         <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
         <!-- Animate CSS -->

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-white">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="/theme/img/logo.png" alt="Logo">
+            <img src="/tour-baku/tour-baku-logo.png" alt="Logo" width="170">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
