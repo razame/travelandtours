@@ -2,6 +2,11 @@
 
 @section('content')
 
+    <style>
+        .section-title{
+            text-align: center;
+        }
+    </style>
     <div class="main-wrapper scrollspy-container">
 
         <section class="inner-page-banner" style="background-image:url(/theme/img/banner/tour-banner.jpg)">

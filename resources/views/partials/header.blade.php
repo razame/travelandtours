@@ -23,14 +23,14 @@
 {{--                <li class="nav-item">--}}
 {{--                    <a class="nav-link" href="hotels.html">Hotels</a>--}}
 {{--                </li>--}}
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('gallery')}}">Gallery</a>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link" href="{{route('gallery')}}">Gallery</a>--}}
+{{--                </li>--}}
 {{--                <li class="nav-item">--}}
 {{--                    <a class="nav-link" href="blog.html">Blog</a>--}}
 {{--                </li>--}}
                 <li class="nav-item">
-                    <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    <a class="nav-link" href="{{route('contact-us-form')}}">Contact Us</a>
                 </li>
             </ul>
         </div>
