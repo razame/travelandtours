@@ -1,33 +1,62 @@
 @extends('app')
 
 @section('content')
+    <style>
+        .inner-page-banner{
+            margin-bottom: 6%;
+        }
+        .page-wrapper{
+            margin-bottom: 6%;
+        }
+    </style>
     <div class="main-wrapper scrollspy-container">
+        <section class="inner-page-banner" style="background-image:url(/theme/img/banner/tour-banner.jpg)">
+            <div class="page-banner-caption">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Contact Us</h1>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="#">{!! __('general.pages') !!}</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end banner -->
+        <br>
+        <br>
+        <br>
+        <br>
 
         <section class="page-wrapper page-detail">
 
-            <div class="page-title border-bottom pt-25 mb-0 border-bottom-0">
+{{--            <div class="page-title border-bottom pt-25 mb-0 border-bottom-0">--}}
 
-                <div class="container">
+{{--                <div class="container">--}}
 
-                    <div class="row gap-15 align-items-center">
+{{--                    <div class="row gap-15 align-items-center">--}}
 
-                        <div class="col-12 col-md-7">
+{{--                        <div class="col-12 col-md-7">--}}
 
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-                                    <li class="breadcrumb-item"><a href="#">{!! __('general.pages') !!}</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Contact us</li>
-                                </ol>
-                            </nav>
+{{--                            <nav aria-label="breadcrumb">--}}
+{{--                                <ol class="breadcrumb">--}}
+{{--                                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>--}}
+{{--                                    <li class="breadcrumb-item"><a href="#">{!! __('general.pages') !!}</a></li>--}}
+{{--                                    <li class="breadcrumb-item active" aria-current="page">Contact us</li>--}}
+{{--                                </ol>--}}
+{{--                            </nav>--}}
 
-                        </div>
+{{--                        </div>--}}
 
-                    </div>
+{{--                    </div>--}}
 
-                </div>
+{{--                </div>--}}
 
-            </div>
+{{--            </div>--}}
 
 
             <div class="container pt-30">
@@ -38,7 +67,7 @@
 
                         <div class="col-12 col-lg-5 col-xl-4">
 
-                            <h4 class="heading-title"><span>Drop us <span class="font200">a message:</span></span></h4>
+                            <h3 class="heading-title"><span>Drop us <span class="font200">a message:</span></span></h3>
 
                             <form method="post" action="{{route('contact-us-email')}}" novalidate="true">
                                 @csrf
@@ -79,7 +108,7 @@
 
                         <div class="col-12 col-lg-6 ml-auto">
 
-                            <h4 class="heading-title"><span>Contact <span class="font200">information:</span></span></h4>
+                            <h3 class="heading-title"><span>Contact <span class="font200">information:</span></span></h3>
 
                             <ul class="contact-list-01">
 
