@@ -25,11 +25,11 @@
                     <div class="footer-widget">
                         <h3>Contact Info</h3>
                         <ul>
-                            <li><i class="fa fa-send" aria-hidden="true"></i> Abbasqulu Aga Bakikhanov, Bridge plaza, AZ1022</li>
-                            <li><i class="fa fa-phone" aria-hidden="true"></i> +994558489228</li>
-                            <li><i class="fa fa-envelope" aria-hidden="true"></i> online@traveloffers.az</li>
-                            <li><i class="fa fa-percent" aria-hidden="true"></i> Tax ID: 1404932861</li>
-                            <li><i class="fa fa-address-card" aria-hidden="true"></i> "ZONZO" Limited Liability Company</li>
+                            <li><i class="fa fa-send" aria-hidden="true"></i> Ahmad Rajabli, Tech plaza, AZ1075</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> +994 55 8373671</li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i> book@tourbaku.az</li>
+                            <li><i class="fa fa-percent" aria-hidden="true"></i> Tax ID: 1504971341</li>
+                            <li><i class="fa fa-address-card" aria-hidden="true"></i> "GOLF TRAVEL" Limited Liability Company</li>
                         </ul>
                     </div>
                 </div>
