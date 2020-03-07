@@ -27,7 +27,7 @@
                         <ul>
                             <li><i class="fa fa-send" aria-hidden="true"></i> Ahmad Rajabli, Tech plaza, AZ1075</li>
                             <li><i class="fa fa-phone" aria-hidden="true"></i> +994 55 8373671</li>
-                            <li><i class="fa fa-envelope" aria-hidden="true"></i> book@tourbaku.az</li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i> info@tourbaku.az</li>
                             <li><i class="fa fa-percent" aria-hidden="true"></i> Tax ID: 1504971341</li>
                             <li><i class="fa fa-address-card" aria-hidden="true"></i> "GOLF TRAVEL" Limited Liability Company</li>
                         </ul>
